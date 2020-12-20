@@ -150,12 +150,6 @@ $themes: (
   }
 }
 
-.resume-tags {
-  @include themify($themes) {
-    background: themed("navBackground");
-  }
-}
-
 .icons:hover {
   @include themify($themes) {
     background: themed("iconBackground");

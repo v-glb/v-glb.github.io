@@ -11,7 +11,7 @@ export default () => {
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
         <FontAwesomeIcon
-          icon={["fab", `${dark ? "empire" : "rebel"}`]}
+          icon={["fas", "home"]} // 2 arguments! for FAI component
           className={`brand-icon ${dark ? "empire" : "rebel"}`}
           title="Home"
         />
@@ -31,8 +31,8 @@ export default () => {
           <Nav.Link className="ml-2" as={Link} to="/projects" title="Projects">
             Projects
           </Nav.Link>
-          <Nav.Link className="ml-2" as={Link} to="/resume" title="Resume">
-            Resume
+          <Nav.Link className="ml-2" as={Link} to="/contact" title="Contact">
+            Contact
           </Nav.Link>
           <Form className="ml-3 my-auto">
             <Form.Check

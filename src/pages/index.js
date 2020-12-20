@@ -99,6 +99,7 @@ export default ({ data }) => {
               title="e-mail"
             />
           </a>
+          {/* TODO: Add PGP Key for download in Contact page 
           <a href="../../resume.pdf" target="_blank" download>
             <FontAwesomeIcon
               icon={["fas", "file-alt"]}
@@ -106,6 +107,7 @@ export default ({ data }) => {
               title="Resume"
             />
           </a>
+          */}
         </div>
       </Container>
     </PageLayout>
