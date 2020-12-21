@@ -36,7 +36,9 @@ export default ({ data }) => {
           rounded
           width="140"
           height="140"
-          src={`../../icons/luke-${toString()}.png`}
+          // TODO: Replace with v-icon
+          // src={`../../icons/luke-${toString()}.png`}
+          src={`../../icons/v-circle.png`}
           alt={firstName}
         />
         <article className="w-75 m-auto pt-2 text-justify">
