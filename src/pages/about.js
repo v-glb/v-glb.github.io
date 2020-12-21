@@ -15,7 +15,7 @@ export default ({ data }) => {
   )
 
   const {
-    author,
+    firstName,
     occupation,
     readingList,
     showsList,
@@ -37,7 +37,7 @@ export default ({ data }) => {
           width="140"
           height="140"
           src={`../../icons/luke-${toString()}.png`}
-          alt={author}
+          alt={firstName}
         />
         <article className="w-75 m-auto pt-2 text-justify">
           <p className="text-center">
@@ -49,7 +49,7 @@ export default ({ data }) => {
             ))}
           </p>
           <p className="i-5 mt-4 pt-2">
-            Hello there! My name is <b>{`${author}`}</b>. I am a&nbsp;
+            Hello there! My name is <b>{`${firstName}`}</b>. I am a&nbsp;
             <a
               href="https://www.dictionary.com/e/fictional-characters/padawan/"
               target="_blank"
@@ -115,7 +115,7 @@ export const query = graphql`
       siteMetadata {
         unemployed
         occupation
-        author
+        firstName
         designations
         readingList {
           title

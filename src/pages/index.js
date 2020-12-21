@@ -3,11 +3,11 @@ import { graphql } from "gatsby"
 import ThemeContext from "../utils/theme"
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
-import { Container, Image } from "react-bootstrap"
+import { Container} from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default ({ data }) => {
-  const { unemployed, firstName, lastName, occupation } = data.site.siteMetadata
+  const { author, occupation } = data.site.siteMetadata
   const { dark } = useContext(ThemeContext)
   return (
     <PageLayout>
@@ -34,8 +34,7 @@ export default ({ data }) => {
               color: "black",
             }}
           >
-            <span className="first-name">{firstName}</span>&nbsp;
-            <span className="last-name">{lastName}</span>
+            <span className="first-name">{author}</span>
           </h1>
           <p>
             <i>
@@ -99,8 +98,7 @@ export const query = graphql`
     site {
       siteMetadata {
         unemployed
-        firstName
-        lastName
+        author
         occupation
       }
     }

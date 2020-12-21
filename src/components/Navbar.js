@@ -12,7 +12,7 @@ export default () => {
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
         <FontAwesomeIcon
           icon={["fas", "home"]} // 2 arguments! for FAI component
-          className={`brand-icon ${dark ? "empire" : "rebel"}`}
+          className={`brand-icon ${dark ? "dark" : "light"}`}
           title="Home"
         />
       </Navbar.Brand>
