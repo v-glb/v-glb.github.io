@@ -13,6 +13,8 @@ export default ({ data }) => {
     <PageLayout>
       <SEO title="Home" />
       <Container className="text-center pt-5 mt-5" fluid>
+        
+        {/* TODO: V as Image instead of text beneath?
         <Image
           width="150"
           height="150"
@@ -24,8 +26,8 @@ export default ({ data }) => {
           <p className="mt-2">
             <b> Hey! I am looking for new opportunities :)</b>
           </p>
-        )}
-        <Container className="py-0 my-0">
+        )} */}
+        <Container className="text-center pt-5 mt-5 py-0 my-0">
           <h1
             style={{
               fontSize: "5rem",
@@ -37,8 +39,8 @@ export default ({ data }) => {
           </h1>
           <p>
             <i>
-              {occupation} by day,&nbsp;
-              {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
+              {occupation}&nbsp;
+              {dark ? `by night` : `by day`}
             </i>
           </p>
         </Container>
@@ -67,29 +69,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="https://www.freecodecamp.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "free-code-camp"]}
-              className="icons fcc"
-              title="FreeCodeCamp"
-            />
-          </a>
-          <a
-            href="https://www.hackerrank.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "hackerrank"]}
-              className="icons hr"
-              title="Hackerrank"
-            />
-          </a>
-          <a
-            href="mailto:johndoe@gmail.com"
+            href="mailto:v.networks@posteo.de"
             target="_blank"
             rel="noopener noreferrer"
           >
