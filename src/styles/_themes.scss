@@ -141,7 +141,7 @@ $themes: (
 .blog-filter {
   @include themify($themes) {
     & input {
-      color: themed("titleColor");
+      color: themed("textColor");
       &:focus {
         box-shadow: 0 0 0 1px rgba(themed("hrefColor"), 0.5);
         border-color: rgba(themed("hrefColor"), 0.5);
