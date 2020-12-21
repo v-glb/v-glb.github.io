@@ -2,11 +2,10 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 export default () => {
-  const { author } = useStaticQuery(query).site.siteMetadata
   return (
     <div className="footer text-muted text-center">
       <span className="m-auto">
-        <b>{author}</b> &copy; {new Date().getFullYear()}. Made with&nbsp;
+        &copy; {new Date().getFullYear()}. Made with&nbsp;
         <a href="https://www.gatsbyjs.org/">Gatsby</a> &&nbsp;
         <span className="heart">&nbsp;❤&nbsp;</span>
       </span>
