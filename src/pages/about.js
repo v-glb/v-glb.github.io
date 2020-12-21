@@ -32,15 +32,14 @@ export default ({ data }) => {
       <SEO title="About Me" />
       <PageTitle title="About Me" />
       <Container>
-        <Image
+        {/* <Image
           rounded
           width="140"
           height="140"
           // TODO: Replace with v-icon
-          // src={`../../icons/luke-${toString()}.png`}
-          src={`../../icons/v-circle.png`}
+          src={`../../icons/luke-${toString()}.png`}
           alt={firstName}
-        />
+        /> */}
         <article className="w-75 m-auto pt-2 text-justify">
           <p className="text-center">
             {designations.map((attr, i) => (
