@@ -1,5 +1,4 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
 export default () => {
   return (
@@ -12,12 +11,3 @@ export default () => {
     </div>
   )
 }
-const query = graphql`
-  query Author {
-    site {
-      siteMetadata {
-        author
-      }
-    }
-  }
-`
