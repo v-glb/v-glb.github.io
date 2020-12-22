@@ -1,8 +1,8 @@
-import React, { useContext } from "react"
-import { PageLayout, PageTitle } from "../components"
-import { Container, Image } from "react-bootstrap"
+import React from "react"
+import { PageLayout, PageTitle, TechStack } from "../components"
+import { Container } from "react-bootstrap"
 import { Link, graphql } from "gatsby"
-import { ThemeContext, SEO } from "../utils"
+import { SEO } from "../utils"
 
 export default ({ data }) => {
   const MediaLink = ({ title, author, link }) => (
@@ -22,7 +22,6 @@ export default ({ data }) => {
     designations,
     unemployed,
   } = data.site.siteMetadata
-  const { toString } = useContext(ThemeContext)
 
   const bookLinks = readingList.map(book => MediaLink(book))
   const showLinks = showsList.map(show => MediaLink(show))
@@ -32,14 +31,6 @@ export default ({ data }) => {
       <SEO title="About Me" />
       <PageTitle title="About Me" />
       <Container>
-        {/* <Image
-          rounded
-          width="140"
-          height="140"
-          // TODO: Replace with v-icon
-          src={`../../icons/luke-${toString()}.png`}
-          alt={firstName}
-        /> */}
         <article className="w-75 m-auto pt-2 text-justify">
           <p className="text-center">
             {designations.map((attr, i) => (
@@ -50,31 +41,22 @@ export default ({ data }) => {
             ))}
           </p>
           <p className="i-5 mt-4 pt-2">
-            Hello there! My name is <b>{`${firstName}`}</b>. I am a&nbsp;
-            <a
-              href="https://www.dictionary.com/e/fictional-characters/padawan/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              padawan
-            </a>
-            &nbsp;
-            <b>{occupation}</b> discovering the ways of the code. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+            Hello there! My name is <b>{`${firstName}`}</b>. I'm a&nbsp;
+            <b>{occupation}</b> and former <b>Sysadmin</b> taking my first steps
+            into programming, always curious to learn something new and broaden
+            my horizons. Right now I’m in the middle of an apprenticeship for
+            software development and working on front-end projects mostly. Take
+            a look at the tools and technologies below to get insight of my
+            current skills and interests.
           </p>
+          <br />
+          <TechStack />
+          <br />
           <p className="i-5">
             In my spare time, Lorem ipsum dolor sit amet, consectetur adipiscing
             elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <p className="i-5">
-            Check out my <Link to="/projects">projects</Link> to see what I've
-            been up to! Or check out my <Link to="/blog">blog</Link> to see
-            what's recently caught my eye!
           </p>
         </article>
         <article className="w-75 m-auto">
@@ -83,8 +65,8 @@ export default ({ data }) => {
               <hr />
               <p className="unemployed">
                 <small>
-                  I am <b>currently looking for new opportunities</b>! If you
-                  like what you , let's get in <Link to="/contact">touch!</Link>
+                  I'm <b>currently looking for new opportunities</b>! If you're
+                  interested, let's get in <Link to="/contact">touch!</Link>
                 </small>
               </p>
             </>
