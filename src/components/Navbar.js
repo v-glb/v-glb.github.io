@@ -11,8 +11,9 @@ export default () => {
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
         <FontAwesomeIcon
-          icon={["fas", "home"]} // 2 arguments! for FAI component
-          className={`brand-icon ${dark ? "dark" : "light"}`}
+          // TODO: Legally OK to use vuejs icon?
+          icon={["fab", "vuejs"]} // 2 arguments! for FAI component
+          className={` brand-icon ${dark ? "dark" : "light"}`}
           title="Home"
         />
       </Navbar.Brand>
@@ -22,14 +23,14 @@ export default () => {
         className="justify-content-end"
       >
         <Nav className="pr-3 mr-4 nav-links">
-          <Nav.Link className="ml-2" as={Link} to="/blog" title="Blog">
-            Blog
-          </Nav.Link>
           <Nav.Link className="ml-2" as={Link} to="/about" title="About">
             About
           </Nav.Link>
           <Nav.Link className="ml-2" as={Link} to="/projects" title="Projects">
             Projects
+          </Nav.Link>
+          <Nav.Link className="ml-2" as={Link} to="/blog" title="Blog">
+            Blog
           </Nav.Link>
           <Nav.Link className="ml-2" as={Link} to="/contact" title="Contact">
             Contact
