@@ -6,7 +6,7 @@ import { SEO } from "../utils"
 
 export default ({ data }) => {
   const MediaLink = ({ title, author, link }) => (
-    <li key={title} style={{ color: "gray" }}>
+    <li key={title}>
       <a target="_blank" rel="noopener noreferrer" href={link}>
         {title}
       </a>
