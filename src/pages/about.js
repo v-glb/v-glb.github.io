@@ -7,7 +7,7 @@ import { SEO } from "../utils"
 export default ({ data }) => {
   const MediaLink = ({ title, author, link }) => (
     <li key={title} style={{ color: "gray" }}>
-      <a rel="noopener noreferrer" href={link}>
+      <a target="_blank" rel="noopener noreferrer" href={link}>
         {title}
       </a>
       &nbsp;-<i>{author}</i>
@@ -18,13 +18,13 @@ export default ({ data }) => {
     firstName,
     occupation,
     readingList,
-    showsList,
+    musicList,
     designations,
     unemployed,
   } = data.site.siteMetadata
 
   const bookLinks = readingList.map(book => MediaLink(book))
-  const showLinks = showsList.map(show => MediaLink(show))
+  const musicLinks = musicList.map(band => MediaLink(band))
 
   return (
     <PageLayout>
@@ -53,10 +53,15 @@ export default ({ data }) => {
           <TechStack />
           <br />
           <p className="i-5">
-            In my spare time, Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
+            In my spare time, I like to tinker with technology, write prose
+            every now and then, socialize with friends over a cup of coffee and
+            go to the cinema. (Well, pre covid 19 times - I really miss it!) I'm
+            also into Open Source, IT security and data privacy. That's the
+            reason why you don't see a cookie banner or anything like that on
+            this page: No Google Analytics, no tracking or whatsoever.
+          </p>
+          <p className="i-5">
+            And last but not least: I'm really passionate about books and music!
           </p>
         </article>
         <article className="w-75 m-auto">
@@ -73,19 +78,16 @@ export default ({ data }) => {
           )}
           <hr />
           <h5 className="watch-list-title pt-4">
-            Here are a couple of books from my reading list:
+            Here is what's currently on my reading list:
           </h5>
           <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{bookLinks}</ul>
           <h5 className="watch-list-title pt-4">
-            Here are a couple of shows from my watch list:
+            And the current favourites on my playlist:
           </h5>
-          <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{showLinks}</ul>
-          <h5 className="watch-list-title pt-4">
-            Here are a couple of movies from my watch list:
-          </h5>
-          <p>
-            <i>...waaaay too many to list.</i>
-          </p>
+          <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>
+            {musicLinks}
+          </ul>
+          <br />
         </article>
       </Container>
     </PageLayout>
@@ -105,7 +107,7 @@ export const query = graphql`
           author
           link
         }
-        showsList {
+        musicList {
           title
           author
           link
