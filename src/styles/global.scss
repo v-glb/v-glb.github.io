@@ -146,3 +146,9 @@ body {
 .user-details h1 {
   font-weight: 400;
 }
+
+// default color for list elements, readable in dark and light mode
+
+li {
+  color: gray;
+}
