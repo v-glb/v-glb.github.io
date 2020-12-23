@@ -32,11 +32,9 @@ export default () => {
             </a>
           </p>
           <br />
-          <p className="i-5">
-            <h5>
+          <h5 className="i-5">
               <b>v (dot) glb (at) posteo (dot) de.</b>
-            </h5>
-          </p>
+          </h5>
         </article>
       </Container>
     </PageLayout>
