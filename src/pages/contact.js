@@ -9,7 +9,7 @@ export default () => {
     <PageLayout>
       <SEO title="Contact" />
       <PageTitle title="Contact"></PageTitle>
-      <a href="../../v-glb-pubkey.asc" target="_blank" download>
+      <a href="../../v_glb_posteo_pubkey.asc" target="_blank" download>
         <FontAwesomeIcon
           style={{ fontSize: "2rem" }}
           icon={["fas", "file-download"]}
@@ -24,7 +24,7 @@ export default () => {
             and send me an email. Download the key either directly here or get
             it from the&nbsp;
             <a
-              href="https://keyserver.ubuntu.com/pks/lookup?search=v.glb%40posteo.de&fingerprint=on&op=index"
+              href="https://keyserver.ubuntu.com/pks/lookup?search=0xf8810b1c238f36dca771d81499e1af05e355fed7&fingerprint=on&op=index"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -33,7 +33,7 @@ export default () => {
           </p>
           <br />
           <h5 className="i-5">
-              <b>v (dot) glb (at) posteo (dot) de.</b>
+            <b>v (dot) glb (at) posteo (dot) de.</b>
           </h5>
         </article>
       </Container>
