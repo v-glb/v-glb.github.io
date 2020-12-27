@@ -42,7 +42,8 @@ export default ({ data }) => {
               title="Github"
             />
           </a>
-          <a
+
+          {/* <a
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -52,7 +53,8 @@ export default ({ data }) => {
               className="icons linkedin"
               title="LinkedIn"
             />
-          </a>
+          </a> */}
+
           <a
             href="mailto:v.networks@posteo.de"
             target="_blank"
