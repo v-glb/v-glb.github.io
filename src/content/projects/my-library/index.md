@@ -10,3 +10,5 @@ track of my book collection!
 
 It's written in electron and plain javascript/HTML/CSS, after I saw [this video](https://www.youtube.com/watch?v=JaMCxVWtW58)
 from Traversy Media.
+
+See the source code here: https://github.com/v-glb/myLibrary

@@ -12,8 +12,10 @@ Ever heard of [BlinkStick](https://www.blinkstick.com/)? To quote from their web
 
 This program turns your BlinkStick into a hardware monitor that will change it's color depending on your CPU or RAM usage. See below Tresholds:
 
-- OK (green):       < 50%
+- OK (green): < 50%
 - Warning (orange): >= 50%
-- Critical (red):   >= 80%
+- Critical (red): >= 80%
 
-It's developed as a simple Tray Application in Electron. If you want to check details or set a custom color for the BlinkStick you can do so by clicking the tray icon. 
+It's developed as a simple Tray Application in Electron. If you want to check details or set a custom color for the BlinkStick you can do so by clicking the tray icon.
+
+See the source code here: https://github.com/v-glb/blinkstick-control-center
