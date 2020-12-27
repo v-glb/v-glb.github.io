@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import ThemeContext from "../utils/theme"
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
-import { Container} from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default ({ data }) => {
@@ -13,20 +13,6 @@ export default ({ data }) => {
     <PageLayout>
       <SEO title="Home" />
       <Container className="text-center pt-5 mt-5" fluid>
-        
-        {/* TODO: V as Image instead of text beneath?
-        <Image
-          width="150"
-          height="150"
-          fluid
-          src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
-          alt={dark ? "Darth Vader" : "R2-D2"}
-        />
-        {unemployed && (
-          <p className="mt-2">
-            <b> Hey! I am looking for new opportunities :)</b>
-          </p>
-        )} */}
         <Container className="text-center pt-5 mt-5 py-0 my-0">
           <h1
             style={{
@@ -75,18 +61,9 @@ export default ({ data }) => {
             <FontAwesomeIcon
               icon={["fas", "envelope"]}
               className="icons mail"
-              title="e-mail"
+              title="E-Mail"
             />
           </a>
-          {/* TODO: Add PGP Key for download in Contact page 
-          <a href="../../resume.pdf" target="_blank" download>
-            <FontAwesomeIcon
-              icon={["fas", "file-alt"]}
-              className="icons file"
-              title="Resume"
-            />
-          </a>
-          */}
         </div>
       </Container>
     </PageLayout>
