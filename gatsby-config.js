@@ -61,7 +61,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-preload-link-crossorigin`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
