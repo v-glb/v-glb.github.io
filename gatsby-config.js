@@ -25,9 +25,9 @@ module.exports = {
     ],
     readingList: [
       {
-        title: `The Pragmatic Programmer`,
-        author: `Andy Hunt, Dave Thomas`,
-        link: `https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer?from_search=true&from_srp=true&qid=BmE6pIDfFE&rank=1`,
+        title: `Electronics for Dummies`,
+        author: `Gordon McComb, Earl Boysen`,
+        link: `https://www.goodreads.com/book/show/639240.Electronics_for_Dummies?from_search=true&from_srp=true&qid=14SHXtW06o&rank=1`,
       },
       {
         title: `The Star Diaries`,
@@ -35,9 +35,9 @@ module.exports = {
         link: `https://www.goodreads.com/book/show/889418.The_Star_Diaries?from_search=true&from_srp=true&qid=VLYhqWdkNd&rank=1`,
       },
       {
-        title: `Neuromancer`,
-        author: `William Gibson`,
-        link: `https://www.goodreads.com/book/show/6088007-neuromancer?from_search=true&from_srp=true&qid=9HNtUlUimF&rank=1`,
+        title: `Clean Code`,
+        author: `Robert C. Martin`,
+        link: `https://www.goodreads.com/book/show/3735293-clean-code?from_search=true&from_srp=true&qid=O6NOzkjAYY&rank=1`,
       },
     ],
     musicList: [
