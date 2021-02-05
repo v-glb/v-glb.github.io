@@ -22,6 +22,7 @@ module.exports = {
       `Book Worm`,
       `Coffee Lover`,
       `FOSS Enthusiast`,
+      `Guitarist`,
     ],
     readingList: [
       {
