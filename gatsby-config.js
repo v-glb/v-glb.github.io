@@ -43,14 +43,14 @@ module.exports = {
     ],
     musicList: [
       {
+        title: `Mr. Tambourine Man`,
+        author: `The Helio Sequence`,
+        link: `https://www.youtube.com/watch?v=f9LoukLaYNU`,
+      },
+      {
         title: `Recon`,
         author: `Access To Arasaka`,
         link: `https://tympanikaudio.bandcamp.com/track/recon`,
-      },
-      {
-        title: `Breeze Bay`,
-        author: `Hello Meteor`,
-        link: `https://hellometeor.bandcamp.com/track/breeze-bay`,
       },
       {
         title: `Baby Blu`,
