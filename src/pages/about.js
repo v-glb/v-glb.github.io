@@ -42,10 +42,10 @@ export default ({ data }) => {
           </p>
           <p className="i-5 mt-4 pt-2">
             Hello there! My name is <b>{`${firstName}`}</b>. I'm a&nbsp;
-            <b>{occupation}</b> and former <b>Sysadmin</b> taking my first steps
-            into programming, always curious to learn something new and broaden
-            my horizons. Right now I’m in the middle of an apprenticeship for
-            software development and working on front-end projects mostly. Take
+            <b>{occupation}</b> and former <b>Sysadmin</b>, always curious to 
+            learn something new and broaden
+            my horizons. Right now I’m almost finished with my apprenticeship for
+            software development and working Full Stack mostly. Take
             a look at the tools and technologies below to get insight of my
             current skills and interests.
           </p>
