@@ -43,18 +43,6 @@ export default ({ data }) => {
             />
           </a>
 
-          {/* <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "linkedin"]}
-              className="icons linkedin"
-              title="LinkedIn"
-            />
-          </a> */}
-
           <a
             href="mailto:v.networks@posteo.de"
             target="_blank"
@@ -64,6 +52,18 @@ export default ({ data }) => {
               icon={["fas", "envelope"]}
               className="icons mail"
               title="E-Mail"
+            />
+          </a>
+
+          <a
+            href="https://www.instagram.com/v._glb/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "instagram"]}
+              className="icons instagram"
+              title="Instagram"
             />
           </a>
         </div>

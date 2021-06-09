@@ -20,6 +20,7 @@ $themes: (
     titleColor: $dark-blue,
     hrefColor: $dark-blue,
     github: $dark-blue,
+    instagram: $dark-blue,
     linkedin: $dark-blue,
     fcc: $fcc-green,
     hr: $hr-green,
@@ -42,6 +43,7 @@ $themes: (
     themeColor: $dark-red,
     heartColor: red,
     github: $v-turquoise,
+    instagram: $v-turquoise,
     linkedin: $v-turquoise,
     fcc: $empire-red,
     hr: $empire-red,
@@ -155,6 +157,9 @@ $themes: (
     background: themed("iconBackground");
     &.github {
       color: themed("github");
+    }
+    &.instagram {
+      color: themed("instagram");
     }
     &.linkedin {
       color: themed("linkedin");
