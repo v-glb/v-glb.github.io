@@ -197,7 +197,7 @@ export default () => {
           />
         </svg>
         <p>
-          I'm experienced with Git as VCS and currently diving into React and
+          I'm experienced with Git as VCS and enjoyed diving into React and
           Electron for building cross-plattform applications as a personal
           interest.
         </p>

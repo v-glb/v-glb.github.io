@@ -18,11 +18,10 @@ module.exports = {
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
     unemployed: false,
     designations: [
-      `Programmer`,
-      `Book Worm`,
-      `Coffee Lover`,
-      `FOSS Enthusiast`,
-      `Guitarist`,
+      `Programming`,
+      `Cooking`,
+      `Fitness`,
+      `Music`,
     ],
     readingList: [
       {
