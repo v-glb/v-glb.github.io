@@ -1,36 +1,59 @@
 # this is only for search engines, it does not appear in the home
 # as long as the json variables name and description are provided
-title: Hacked Jekyll
-description: Jekyll microtheme that looks like JSON
+title: V's homepage
+description: Online portfolio
 baseurl: ""
-url: https://hacked-jekyll.netlify.app
+url: https://v-glb.github.io
 
 # this information is shown on the homepage, all fields are optional and
 # can be declared either as a single string or as a string array/hash
 json:
-  name: Place Holder
+  name: Welcome to my portfolio
   description:
     - Hello!
-    - This tiny website
-    - Looks like json
-  cv: assets/cv.pdf
-  address:
-    - University of Jekyll
-    - Department of Themes
-    - 123 Main St, Anytown, USA
+    - My name is Vadim
+    - I'm a Full Stack Developer
+    - Find out what I'm familiar with below
+  # cv: assets/cv.pdf
+  # address:
+  #   - University of Jekyll
+  #   - Department of Themes
+  #   - 123 Main St, Anytown, USA
+  cms:
+    - Adobe Experience Manager
+    - Magnolia
+    - Drupal
+    - Liferay
+  languages:
+    - HTML
+    - CSS
+    - LESS
+    - JavaScript
+    - PHP
+    - MySQL
+    - Java
+    - Python
+    - Bash
+  frameworks:
+    - React
+    - Electron
+    - Twig
+    - Apache Sling
+    - Spring Boot
+  tools:
+    - Docker
+    - Git
+    - CI/CD
+    - REST
+    - agile
+    - markdown
   contact:
-    office: Foobar Hall 1.23
-    phone: +1 234 567 890
-    email: username@domain.com
-  demo: https://hacked-jekyll.netlify.app
-  source: https://github.com/piazzai/hacked-jekyll
+    email: v.glb@posteo.de
+  source: https://github.com/v-glb/v-glb.github.io
   profiles:
-    facebook: https://www.facebook.com
-    twitter: https://twitter.com
-    instagram: https://www.instagram.com
-    linkedin: https://www.linkedin.com
-    stackoverflow: https://stackoverflow.com
-    github: https://github.com
+    linkedin: https://www.linkedin.com/in/vadim-glebow-180471279/
+    xing: 'https://www.xing.com/profile/Vadim_Glebow/cv'
+    github: https://github.com/v-glb
 
 exclude:
   - LICENSE

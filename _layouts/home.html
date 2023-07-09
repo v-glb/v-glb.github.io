@@ -45,12 +45,73 @@ layout: default
     {% endif %}
   </div>
   <div class="block">
+    {% if site.json.cms %}
+    {% if site.json.cms.first %}
+    <p><span class="array-key">cms</span></p>
+    <div class="array">
+      {% for i in site.json.cms%}
+      <p class="array-attr">{{ i }}</p>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p><span class="key">cms</span><span class="attr">{{ site.json.cms}}</span></p>
+    {% endif %}
+    {% endif %}
+  </div>
+  <div class="block">
+    {% if site.json.languages %}
+    {% if site.json.languages.first %}
+    <p><span class="array-key">languages</span></p>
+    <div class="array">
+      {% for i in site.json.languages %}
+      <p class="array-attr">{{ i }}</p>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p><span class="key">languages</span><span class="attr">{{ site.json.languages }}</span></p>
+    {% endif %}
+    {% endif %}
+  </div>
+  <div class="block">
+    {% if site.json.frameworks %}
+    {% if site.json.frameworks.first %}
+    <p><span class="array-key">frameworks</span></p>
+    <div class="array">
+      {% for i in site.json.frameworks %}
+      <p class="array-attr">{{ i }}</p>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p><span class="key">frameworks</span><span class="attr">{{ site.json.frameworks }}</span></p>
+    {% endif %}
+    {% endif %}
+  </div>
+  <div class="block">
+    {% if site.json.tools %}
+    {% if site.json.tools.first %}
+    <p><span class="array-key">tools</span></p>
+    <div class="array">
+      {% for i in site.json.tools %}
+      <p class="array-attr">{{ i }}</p>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p><span class="key">tools</span><span class="attr">{{ site.json.tools }}</span></p>
+    {% endif %}
+    {% endif %}
+  </div>
+  <div class="block">
     {% if site.json.contact %}
     {% if site.json.contact.first %}
     <p><span class="list-key">contact</span></p>
     <div class="list">
       {% for i in site.json.contact %}
+      {% assign value = i | slice: 0 %}
+      {% if value contains "email" %}
+      <p><span class="list-subkey">{{ i | slice: 0 }}</span><span class="attr"><a href="mailto: {{i | slice: 1}}">{{ i | slice: 1 }}</a></span></p>
+      {% else %}
       <p><span class="list-subkey">{{ i | slice: 0 }}</span><span class="list-attr">{{ i | slice: 1 }}</span></p>
+      {% endif %}
       {% endfor %}
     </div>
     {% else %}
