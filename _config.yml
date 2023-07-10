@@ -5,10 +5,25 @@ description: Online portfolio
 baseurl: ""
 url: https://v-glb.github.io
 
+# Nav
+docs:
+
+- title: Home
+  url: home.html
+
+- title: About
+  url: about.html
+
 # this information is shown on the homepage, all fields are optional and
 # can be declared either as a single string or as a string array/hash
 json:
   name: Welcome to my portfolio
+  about:
+    - This website is powered by Jekyll
+    - An open source static site generator
+    - which respects your privacy
+    - by not setting any cookies
+    - or using Google Analytics
   description:
     - Hello!
     - My name is Vadim

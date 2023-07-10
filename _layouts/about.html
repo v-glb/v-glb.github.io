@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<main class="json">
+  <div class="block">
+    {% if site.json.about %}
+    {% if site.json.about.first %}
+    <div id="typed-strings">
+      {% for i in site.json.about %}
+      <span>{{ i | prepend: '"' | append: '",'}}</span>
+      {% endfor %}
+    </div>
+    <p><span class="key">about</span>{% include typed.html %}</p>
+    {% else %}
+    <p><span class="key">about</span><span class="attr">{{ site.json.about }}</span></p>
+    {% endif %}
+    {% else %}
+    <p><span class="key">about</span><span class="attr">{{ site.about }}</span></p>
+    {% endif %}
+    {% if site.json.source %}
+    {% assign source = site.json.source | split: "github.com/" | slice: 1 %}
+    <p><span class="key">source</span><span class="attr"><a href="{{ site.json.source }}">{{ source }}</a></span></p>
+    {% endif %}
+  </div>
+</main>
