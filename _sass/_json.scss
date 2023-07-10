@@ -1,5 +1,6 @@
 .json {
   white-space: nowrap;
+  overflow: hidden;
 
   &:before {
     content: "{";
