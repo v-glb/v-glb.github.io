@@ -24,6 +24,10 @@ main {
     font-size: 20px;
     width: 60%
   }
+
+  @media (max-width: 768px) {
+    left: 5%;
+  }
 }
 
 p {
